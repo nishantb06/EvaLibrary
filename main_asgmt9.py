@@ -1,12 +1,12 @@
 # print albumentations
 # !pip install albumentations
 
-from EvaLibrary.models.models_Asgmt9 import CustomResNet
+from models.models_Asgmt9 import CustomResNet
 import torch.optim as optim
-from EvaLibrary.src.dataloader_Asgmt9 import trainloader,testloader
+from src.dataloader_Asgmt9 import trainloader,testloader
 import torch
-from EvaLibrary.src.train import train
-from EvaLibrary.src.test import test
+from src.train import train
+from src.test import test
 
 device  = "cuda"
 
