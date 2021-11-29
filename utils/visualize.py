@@ -13,7 +13,7 @@ from torchvision.utils import make_grid
 from torch.utils.data.dataloader import DataLoader
 from torch.utils.data import random_split
 from utils.gradcam import GradCam
-from denormalization import denormalize
+from utils.denormalization import denormalize
 
 class VisualizeCam(object):
 
