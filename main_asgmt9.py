@@ -27,7 +27,7 @@ def engine():
     test_accuracies = []
     test_losses = []
 
-    for epoch in range(1, 4):
+    for epoch in range(1, 2):
 
         print(f"Epoch {epoch}")
         
