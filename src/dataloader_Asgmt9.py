@@ -5,7 +5,7 @@ import torchvision.transforms as transforms
 
 # Albumentations for augmentations
 import albumentations as A
-from albumentations.pytorch import ToTensorV2
+from albumentations.pytorch.transforms import ToTensorV2
 device = 'cuda'
 torch.manual_seed(2)
 
