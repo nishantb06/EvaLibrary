@@ -14,7 +14,7 @@ from torch.utils.data.dataloader import DataLoader
 from torch.utils.data import random_split
 from utils.gradcam import GradCam
 from utils.denormalization import denormalize
-
+import cv2
 class VisualizeCam(object):
 
 	def __init__(self, model, classes, target_layers):
