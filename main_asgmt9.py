@@ -56,6 +56,6 @@ viz_cam = VisualizeCam(model,classes, target_layers)
 num_img = 20
 
 incorrect_pred_imgs = []
-for i in range(20):
+for i in range(10):
   incorrect_pred_imgs.append(torch.as_tensor(incorrect_images[i]["img"]))
 viz_cam(torch.stack(incorrect_pred_imgs), target_layers, metric="incorrect")
