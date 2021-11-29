@@ -12,6 +12,7 @@ from torchvision.transforms import ToTensor
 from torchvision.utils import make_grid
 from torch.utils.data.dataloader import DataLoader
 from torch.utils.data import random_split
+from utils.gradcam import GradCam
 
 class VisualizeCam(object):
 
