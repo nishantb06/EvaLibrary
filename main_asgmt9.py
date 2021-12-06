@@ -17,12 +17,12 @@ import argparse
 
 parser = argparse.ArgumentParser(description='Initialise weight or not')
 parser.add_argument("w",type = bool, help = 'whether to initialise weights as given in the blog or not')
-
+args = parser.parse_args()
 
 device  = "cuda"
 
 def engine():
-    model = CustomResNet(parser.w).to(device)
+    model = CustomResNet(args.w).to(device)
     optimizer = optim.SGD(model.parameters(), lr=0.01, momentum=0.9)
     scheduler = torch.optim.lr_scheduler.OneCycleLR(optimizer, max_lr=0.1, steps_per_epoch=len(trainloader), 
                                                     epochs=24,pct_start = 5/24, verbose = True, anneal_strategy = 'linear',
